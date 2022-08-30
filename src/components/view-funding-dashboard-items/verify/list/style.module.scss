@@ -1,0 +1,76 @@
+.page {
+
+    &__searchTracks {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 45px;
+        margin-left: 37px;
+
+        &__search_container {
+            width: 90%;
+            position: relative;
+            margin-top: 18px;
+
+            &__search_input {
+                width: 100%;
+                color: white !important;
+                border: 1px solid #36a1ff !important;
+                background: transparent;
+                outline: none;
+                padding: 15px;
+                font-size: 18px;
+                border-radius: 8px;
+            }
+
+            &__search_icon {
+                position: absolute;
+                right: 20px;
+                top: 13px;
+            }
+        }
+    }
+
+    &__listYT_container {
+        max-height: 520px;
+        margin-top: 30px;
+        overflow: scroll;
+
+        &__list {
+            list-style: none;
+
+            &__item {
+                display: flex;
+                flex: 1;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 30px;
+                border-bottom: 1px solid rgba(225, 225, 225, .2);
+                padding: 25px 0;
+                &__img {
+                    cursor: pointer;
+                }
+
+                &__content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    gap: 20px;
+                    &__title {
+                        font-size: 14px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        width: 260px;
+                        color: #36A1FF;
+                    }
+                    &__description {
+                        font-size: 12px;   
+                    }
+                }
+            }
+        }
+    }
+}

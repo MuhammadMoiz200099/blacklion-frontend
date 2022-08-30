@@ -1,0 +1,249 @@
+.page {
+    display: flex;
+    padding: 20px;
+    color: #f6f6f6 !important;
+
+    &__title_bar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &__title {
+            font-weight: bold;
+        }
+
+        &__subtitle {
+            color: #c9c9c9 !important;
+        }
+    }
+
+    &__fieldsContainer {
+        background: transparent linear-gradient(220deg, #016DA7 20%, #870033F2 100%) 0% 0% no-repeat padding-box;
+        border-radius: 8px;
+
+        &__imagleCircle {
+            height: 210px;
+            width: 210px;
+            border-radius: 50%;
+            background: linear-gradient(90deg, #36A1FF, #0A1230);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &__inner_cirlcle {
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                background: linear-gradient(230deg, #016DA7 56%, #870033F2 120%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        &__innerdetails {
+            display: flex;
+
+            align-items: center;
+        }
+
+        &__aritisName {
+            font-size: 28px;
+            font-family: Inter;
+            font-weight: bold;
+            color: #36A1FF;
+        }
+
+        &__artistsDetails {
+            font-size: 14px;
+            color: #FFFFFF;
+            align-items: center;
+            text-align: center;
+            line-height: 1.5;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        &__addArtistTomyArtist{
+            width: 287px;
+            height: 40px;
+            background-color: #36A1FF !important;
+            border-radius: 20px !important;
+            font-size: 16px;
+            box-shadow: none !important;
+            color: #FFFFFF !important;
+            text-transform: capitalize;
+        }
+        &__ViewFundingBtn {
+            width: 287px;
+            height: 40px;
+            background-color: #EC1086 !important;
+            border-radius: 20px !important;
+            font-size: 16px;
+            box-shadow: none !important;
+            color: #FFFFFF !important;
+            text-transform: capitalize;
+        }
+
+        &__image_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+
+        }
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            margin-top: 20px;
+            gap: 40px;
+            padding-bottom: 40px;
+
+            &__formfield {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                &__label {
+                    color: white;
+                    margin-left: 10px;
+                }
+
+                &__input {
+                    color: #979797 !important;
+                    border: 1px solid #36a1ff !important;
+                    background: transparent;
+                    outline: none;
+                    padding: 15px;
+                    font-size: 18px;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+
+    &__AritistInfoPlusTopTracksContainers {}
+
+    &__ArtistsInfoContainer {
+        height: 345px;
+        width: 601px;
+        background-color: #0A1230;
+        border-radius: 16px;
+        margin-left: 30px;
+        margin-top: 20px;
+        box-shadow: 0px 3px 6px #272D3B33;
+        overflow: scroll;
+
+        &__col1 {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 40px;
+            margin-left: 28px;
+            margin-right: 28px;
+            align-items: center;
+
+
+            &__editArtistBtn {
+                border-radius: 20px;
+                background-color: #36A1FF;
+                font-size: 16px;
+                text-transform: capitalize;
+            }
+
+            &__Artistname {
+                display: flex;
+                flex-direction: column;
+                margin-right: 50px;
+
+                &__name {
+                    font-size: 18px;
+                    color: #BCBCBC;
+                }
+
+                &__Gettingname {
+                    font-size: 18px;
+                    color: #FFFFFF;
+                    margin-top: 15px;
+                }
+            }
+
+            &__ArtistTrack {
+                display: flex;
+                flex-direction: column;
+                margin-right: 100px;
+            }
+        }
+
+        &__col2 {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 40px;
+            margin-left: 28px;
+            margin-right: 28px;
+            align-items: center;
+
+            &__viewAllbtn {
+                text-transform: capitalize;
+                font-size: 12px;
+                color: #BCBCBC;
+            }
+        }
+
+    }
+
+    &__similarArtist {
+        position: relative;
+        background-color: #0A1230;
+        height: 718px;
+        width: 385px;
+        margin-left: 28px;
+        margin-top: 20px;
+        border-radius: 15px;
+        background: #0A1230 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #272D3B33;
+        overflow: scroll;
+
+        &__title {
+            margin: 31px 0 0 0;
+            border-bottom: 1px solid rgba(255,255,255,.2);
+            font-size: 20px;
+            padding: 20px 25px;
+        }
+
+        &__list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            padding: 25px;
+
+            &__items {
+                display: flex;
+                flex: 1;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 30px;
+                border-bottom: 1px solid rgba(255,255,255,.2);
+                padding: 30px 0;
+
+                &__details {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    &__name {
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                    &__subtext {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+    }
+
+}

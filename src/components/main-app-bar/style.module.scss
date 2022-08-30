@@ -1,0 +1,35 @@
+.page {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 70px;
+
+    &__app_bar {
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.6) !important;
+
+        &__logo {
+            width: 150px;
+            margin-top: 15px;
+
+        }
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .page {
+
+        &__app_bar {
+            position: relative;
+
+            &__logo {
+                position: absolute;
+                bottom: 0;
+                right: 25px;
+                top: -6px;
+            }
+        }
+    }
+}

@@ -1,0 +1,161 @@
+.page {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+    border-radius: 15px;
+    width: 66.3rem;
+    min-height: 500px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        padding: 0 20px;
+        margin-top: 30px;
+
+        &__table_title {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        &__btn_filter {
+            background: #36A1FF !important;
+            border-radius: 50px !important;
+        }
+
+        &__add_new {
+            background: #EC1086 !important;
+            border-radius: 50px !important;
+        }
+    }
+
+    &__table {
+        background: #0A1230 !important;
+        max-height: 420px;
+
+        &__col {
+            background: #0A1230 !important;
+            color: white !important;
+            text-align: center !important;
+
+            &__sortable {
+                display: flex;
+                flex: 1;
+                justify-content: center;
+                align-items: center;
+                gap: 8px !important;
+                cursor: pointer;
+            }
+        }
+
+        &__row {
+            color: #d6d6d6 !important;
+            text-align: center !important;
+
+            &__icon {
+                cursor: pointer;
+            }
+
+            &__name {
+                display: flex;
+                width: 200px;
+                justify-content: start;
+                align-items: center;
+
+                &__getname {
+                    margin-left: 36px;
+                }
+            }
+        }
+    }
+
+    &__main_cards_container {
+        width: 100%;
+
+        &__cards_container {
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 20px;
+
+            &__card {
+                width: 310px;
+                height: 310px;
+                background: green;
+                border-radius: 20px;
+                box-shadow: 3px 3px 6px #0A1230;
+                background: #0A1230;
+                animation: all 2s ease-in-out;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+                padding: 20px;
+
+                &__main_container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 10px;
+
+                    &__image {
+                        width: 80px !important;
+                        height: 80px !important;
+                        border: 2px solid #375f8f;
+                    }
+
+                    &__title {
+                        color: white;
+                        font-size: 26px;
+                    }
+
+                    &__subtitle {
+                        color: #c3c3c3;
+                        font-size: 14px;
+                    }
+                }
+
+                &__actions {
+                    color: #d6d6d6 !important;
+                    text-align: center !important;
+
+                    &__icon {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        &__load_more_container {
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            &__load_more_button {
+                padding: 15px 60px;
+                font-size: 18px;
+                font-weight: bold;
+                color: #c8c8c8;
+                background: #0a1230;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                box-shadow: 2px 2px 6px #1a1a1a;
+                margin-top: 40px;
+                outline: none;
+                &:active {
+                    box-shadow: none !important;
+                }
+            }
+        }
+    }
+}

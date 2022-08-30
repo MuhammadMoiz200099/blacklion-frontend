@@ -1,0 +1,51 @@
+.section {
+    padding: 30px 60px;
+    &__header {
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        margin-top: 30px;
+        gap: 10px;
+        &__formfield {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            &__label {
+                color: white;
+            }
+
+            &__inputs {
+                background: rgba(255, 255, 255, .9) !important;
+                border-radius: 5px;
+            }
+        }
+        &__actions {
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+            align-items: center;
+            &__btn_pink {
+                background: #EC1086 !important;
+                &:hover {
+                    background: #ba0666 !important;
+                }
+            }
+        }
+    }
+    &__btn_styl {
+        background: white;
+        &:hover {
+            background: white;
+        }
+    }
+    &__btn_icons {
+        width: 24px;
+    }
+}

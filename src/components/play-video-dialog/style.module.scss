@@ -1,0 +1,12 @@
+.header_container {
+    position: relative;
+    &__header {
+
+        &__close_button {
+            position: absolute;
+            top: 10px;
+            cursor: pointer;
+            right: 13px;
+        }
+    }
+}
